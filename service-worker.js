@@ -6,7 +6,8 @@ var cacheFiles = [
     'images/cat-food.jpg',
     'images/yarn.jpg',
     'images/kitten-litter.png',
-    'images/cat-house.jpg'
+    'images/cat-house.jpg',
+    'images/icon-store-512.png'
 ];
 
 self.addEventListener('install', (e) => {
