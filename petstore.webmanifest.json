@@ -2,7 +2,7 @@
     "name": "My Pet Store PWA",
     "origin": "*",
     "short_name": "petstore",
-    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "methods": "GET,HEAD,PUT,PATCH,HOST,DELETE",
     "description": "my online pet store",
     "icons": [
         {
