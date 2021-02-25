@@ -1,13 +1,13 @@
-var chacheName = 'petstore-v1';
+var cacheName = 'petstore-v1';
 var cacheFiles = [
     'petstore.html',
     'product.js',
     'petstore.webmanifest',
-    'images/cat-food.jpg',
-    'images/yarn.jpg',
-    'images/kitten-litter.png',
-    'images/cat-house.jpg',
-    'images/icon-store-512.png'
+    'Images/cat-food.jpg',
+    'Images/yarn.jpg',
+    'Images/kitten-litter.png',
+    'Images/cat-house.jpg',
+    'Images/icon-store-512.png'
 ];
 
 self.addEventListener('install', (e) => {
@@ -33,7 +33,7 @@ self.addEventListener('fetch', function (e) {
     e.respondWith(
         caches.match(e.request).then(function (r) {
             return r || fetch(e.request).then(function (response) {
-                return caches.open(cacheName).then(function (response) {
+                return caches.open(cacheName).then(function (cache) {
                     cache.put(e.request, response.clone());
                     return response;
                 });
